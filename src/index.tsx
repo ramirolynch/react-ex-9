@@ -15,6 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
 
+    {/* the header is inside the Browser Router and outside of the routes so it persists across pages */}
     <Header></Header>
     
     <Routes> 
@@ -23,8 +24,6 @@ ReactDOM.render(
      <Route path='/details/:id' element={<DetailsRoute/>}/>
      <Route path='/*' element={<Navigate to='/'/>}/>
      
-  
-    
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
